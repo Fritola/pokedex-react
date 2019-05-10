@@ -1,0 +1,11 @@
+.title{
+    font-size: 50px;
+    text-align: center;
+}
+
+.ul_flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;    
+    align-items: flex-end;
+}
