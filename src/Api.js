@@ -23,9 +23,11 @@ class App extends Component {
             <>                      
                 <h1 className="title"> Pokedex </h1>                                  
                 <ul className="ul_flex">                
-                    { this.state.pokemons.map((pokemon) => <h2 key={pokemon.name}> 
-                    <img src={`http://www.pokestadium.com/sprites/xy/${pokemon.name}.gif`}/>
-                    {pokemon.name}</h2> )} 
+                    { this.state.pokemons.map((pokemon) => 
+                    <div className="pokemon" key={pokemon.name}> 
+                        <img alt="pokemon" src={`http://www.pokestadium.com/sprites/xy/${pokemon.name}.gif`}/>
+                        <h2 className="pokemon_name">{pokemon.name}</h2>
+                    </div> )} 
                 </ul>
             </>                      
         )
